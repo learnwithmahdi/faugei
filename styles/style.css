@@ -113,7 +113,6 @@ header {
 }
 
 /* Plants section styles */
-
 .plants {
     max-width: 1140px;
     margin-inline: auto;
@@ -205,7 +204,6 @@ header {
 }
 
 /* Latest deal section styles */
-
 .latest-deal {
     max-width: 1140px;
     margin-inline: auto;
@@ -291,8 +289,52 @@ header {
 .shop-now-lg {
     font-size: 1.75rem;
     font-weight: 600;
-    
 }
+
+/* Join section styles */
+.join {
+    background: url(../images/news-letter-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    padding-block: 199px 193px;
+
+}
+
+.join-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-block: 0 23px;
+}
+
+.subscribe {
+    justify-content: center;
+}
+
+.subscribe input[type="email"]  {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 15.5px 20px;
+    border: 1px solid #D6DDED;
+    background: #FFF;
+    max-width: 644px;
+    width: 100%;
+    outline: none;
+}
+
+.subscribe input[type="button"] {
+    padding: 15.5px 53.5px;
+    color: #FFF;
+    background: #E95A08;
+    font-family: Inter;
+    font-size: 1rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 
 /* Responsive media query */
 @media screen and (max-width: 576px) {
@@ -349,7 +391,6 @@ header {
     }
 
     /* Plants-lover section responsive styles */
-
     .plants-lover {
         flex-direction: column;
         margin: 41px 15px 143px 15px;
@@ -370,7 +411,6 @@ header {
     }
 
     /* Latest deal section responsive styles */
-
     .deal-title {
         font-size: 1.5rem;
         font-weight: 700;
@@ -385,7 +425,7 @@ header {
     }
 
     .images-container {
-        padding-block: 46px 44px;
+        padding-top: 46px;
         grid-template-areas:
         "bloom"
         "ana"
@@ -405,5 +445,22 @@ header {
     .shop-now-lg {
         font-size: 1rem;
         font-weight: 600;
+    }
+
+    /* Join section responsive styles */
+    .join {
+        margin-top: 154px;
+        padding-block: 110px 61px;
+    }
+    .join-title {
+        font-size: 1.25rem;
+    }
+
+    .subscribe input[type="email"]  {
+        max-width: calc(218px - 42px);
+    }
+
+    .subscribe input[type="button"] {
+        padding: 12px 19px;
     }
 }
